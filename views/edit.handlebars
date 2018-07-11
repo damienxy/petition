@@ -1,0 +1,20 @@
+<h1>PETITION</h1>
+<div>{{ first }}, do you want to edit your profile?</div>
+
+{{#error}}
+<div class="error">
+    <p>Name and email address cannot be empty</p>
+</div>
+{{/error}}
+
+<form id="editform" method="POST">
+    <div>First name<input name="first" type="text" value="{{ first }}"></input></div>
+    <div>Last name<input name="last" type="text" value="{{ last }}"></input></div>
+    <div>Email address<input name="email" type="email" value="{{ email }}"></input></div>
+    <div>Password<input name="password" type="password"></input></div>
+    <div>Age<input name="age" type="number" value="{{ age }}"></input></div>
+    <div>City<input name="city" type="text" value="{{ city }}"></input></div>
+    <div>Website<input name="url" type="text" value="{{ url }}"></input></div>
+    <div><input name="_csrf" type="hidden" value={{ csrfToken }}></input>
+    <button>SAVE CHANGES</button>
+</form>

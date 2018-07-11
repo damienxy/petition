@@ -1,0 +1,26 @@
+<h1>PETITION</h1>
+<div>Register now to support our super important cause!</div>
+<div>(more info upon registration)</div>
+
+{{#errorNull}}
+<div class="error">
+    <p>Please make sure you fill out all fields</p>
+</div>
+{{/errorNull}}
+
+{{#errorExists}}
+<div class="error">
+    <p>This email address is already in our database. Please retry.</p>
+</div>
+{{/errorExists}}
+
+<form id="regform" method="POST">
+    <input name="first" type="text" placeholder="First name"></input>
+    <input name="last" type="text" placeholder="Last name"></input>
+    <input name="email" type="email" placeholder="Email address"></input>
+    <input name="password" type="password" placeholder="Password"></input>
+    <input name="_csrf" type="hidden" value={{ csrfToken }}></input>
+    <button>REGISTER</button>
+        <p class="redirqs">Already registered?</p>
+        <a class="redir" href="/login">Click here to login</a>
+</form>

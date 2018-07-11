@@ -1,0 +1,17 @@
+<h1>PETITION</h1>
+<div>Login</div>
+
+{{#error}}
+<div class="error">
+    <p>Email address or password incorrect</p>
+</div>
+{{/error}}
+
+<form id="logform" method="POST">
+    <input name="email" type="email" placeholder="Email address"></input>
+    <input name="password" type="password" placeholder="Password"></input>
+    <input name="_csrf" type="hidden" value={{ csrfToken }}></input>
+    <button>LOGIN</button>
+        <p class="redirqs">Not registered yet?</p>
+        <a class="redir" href="/register">Click here to register</a>
+</form>

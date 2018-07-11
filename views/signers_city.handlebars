@@ -1,0 +1,24 @@
+<h1>These people from {{ city }} have signed:</h1>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+    </tr>
+{{#signers}}
+    <tr>
+        <td></td>
+        {{#if url}}
+        <td><a target="_blank" class="link" href="{{../signersUrl url}}">{{firstname}} {{lastname}}</a></td>
+        {{else}}
+        <td>{{firstname}} {{lastname}}</td>
+        {{/if}}
+        <td class="age">{{ age }}</td>
+        <td></td>
+    </tr>
+{{/signers}}
+</table>
+
+<a class="number" href="/signers">See all signers</a>

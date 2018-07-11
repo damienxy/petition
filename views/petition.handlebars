@@ -1,0 +1,21 @@
+<h1>PETITION</h1>
+<h2>Sign this petition if you support our cause!</h2>
+<div>(click submit for more info)</div>
+
+<form id="sigform" method="POST">
+    {{#error}}
+    <div class="error">
+        <p>Seems like you haven't signed yet</p>
+    </div>
+    {{/error}}
+<div>
+
+    <div id="name">{{ firstname }} {{ lastname }}</div>
+    <input name="sign" type="hidden"></input>
+    <input name="_csrf" type="hidden" value={{ csrfToken }}></input>
+</div>
+<div>Sign here:</div>
+<canvas id="canvas" width="500px" height="70px"></canvas>
+<a class="delete" href="/petition">Start again</a>
+<button type="submit">SUBMIT</button>
+</form>

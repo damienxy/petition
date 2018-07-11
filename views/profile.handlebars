@@ -1,0 +1,12 @@
+<h1>PETITION</h1>
+<div>Hello {{firstname}}, thanks for registering!</div>
+<div>To get a better user experience, please provide the following infos about yourself:</div>
+
+
+<form id="profileform" method="POST">
+    <input name="age" type="number" placeholder="Your age"></input>
+    <input name="city" type="text" placeholder="Your city"></input>
+    <input name="url" type="text" placeholder="Your website"></input>
+    <input name="_csrf" type="hidden" value={{ csrfToken }}></input>
+    <button>CONTINUE</button>
+</form>

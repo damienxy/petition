@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    font-family: Raleway;
+    background-color: #e0fbfc;
+}
+
+img {
+    margin-top: 50px;
+}
+
+th,
+td {
+    font-family: Raleway;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.age {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td:first-child,
+th:first-child {
+    width: 100px;
+    border-left: none;
+}
+
+td:last-child,
+th:last-child {
+    width: 100px;
+    border-right: none;
+}
+
+th {
+    border-bottom: solid 1px grey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#body,
+#regform,
+#logform,
+#sigform,
+#profileform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#editform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#editform button {
+    align-self: center;
+}
+
+#about {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+#about a {
+    text-decoration: underline;
+}
+
+.menu-container {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    float: right;
+}
+
+.menu {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    margin: -10px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+input,
+#name {
+    border: 1px black dashed;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#name {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input:focus {
+    border: 2px black solid;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    margin: 0;
+    text-decoration: underline;
+    color: blue;
+}
+
+.redirqs {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-top: 1px solid black;
+}
+
+button,
+.redir {
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    border: 1px black dashed;
+    font-weight: bold;
+}
+
+.redir {
+    width: 200px;
+    text-align: center;
+    border: 1px black solid;
+}
+
+button:hover,
+.redir:hover {
+    border: 2px black solid;
+    box-shadow: 2px 2px 5px black;
+}
+
+button:active,
+.redir:active {
+    box-shadow: none;
+    outline: none;
+    transform: translateX(2px);
+}
+
+.error {
+    color: red;
+}
+
+.number {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button.delete,
+a.delete {
+    border: none;
+    width: auto;
+    font-size: 11px;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+button.delete:hover,
+a.delete:hover {
+    text-decoration: underline;
+    border: none;
+    box-shadow: none;
+}
