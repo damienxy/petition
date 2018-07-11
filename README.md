@@ -1,9 +1,7 @@
-# Petition
+# Petition built with Handlebars.js
 
-Petition page built with Handlebars.js.
-
-Features:
+**Features:**
 Login/Registration | Electronic signature (mouse/touchscreen) | Edit profile | See all signers | See signers by city
 
-Technologies:
+**Technologies:**
 Javascript | jQuery | Handlebars.js | Node.js | Express.js | PostgreSQL | HTML/CSS
